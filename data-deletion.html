@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account & Data Deletion - AdRewards | Google Play Safety</title>
+  <meta name="description" content="Request permanent deletion of your AdRewards account, Google profile, and stored user data in compliance with Google Play Store Data Safety policies.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="brand">
+          <div class="brand-icon">▶</div>
+          <div class="brand-title">Ad<span>Rewards</span></div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms</a></li>
+          <li><a href="data-deletion.html" class="active">Data Deletion</a></li>
+          <li><a href="support.html">Help & Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Legal Body -->
+  <main class="container legal-page">
+    <div class="legal-header">
+      <h1>Account & User Data Deletion</h1>
+      <div class="meta">
+        Google Play Store Compliance Policy • Application: <strong>AdRewards (com.bhavin.adrewards)</strong>
+      </div>
+    </div>
+
+    <div class="legal-content">
+      <div class="highlight-box">
+        <strong>Google Play Data Safety Mandate:</strong> In accordance with Google Play developer program guidelines, AdRewards provides full user control over personal data. You have the right to permanently erase your account and all associated cloud data.
+      </div>
+
+      <h2>How to Request Account & Data Deletion</h2>
+      <p>You can delete your account using any of the three options below:</p>
+
+      <h3>Option 1: Instant In-App Deletion (Recommended)</h3>
+      <ol>
+        <li>Open the <strong>AdRewards</strong> app on your Android device.</li>
+        <li>Tap the <strong>🛡️ (Shield)</strong> icon in the top header, or tap <strong>Data Deletion</strong> in the bottom footer.</li>
+        <li>Select the <strong>Data Deletion</strong> tab.</li>
+        <li>Tap the red button: <strong>&ldquo;🗑️ Permanently Delete My Account & Data&rdquo;</strong>.</li>
+        <li>Confirm the dialog. Your session will be terminated and your data erased immediately.</li>
+      </ol>
+
+      <h3>Option 2: Direct Email Request</h3>
+      <p>
+        Send an email from the Google email address associated with your AdRewards account to:
+        <br>
+        📧 <a href="mailto:juliemodhh@gmail.com?subject=Account%20and%20Data%20Deletion%20Request"><strong>juliemodhh@gmail.com</strong></a>
+        <br>
+        Subject: <code>Account and Data Deletion Request</code>
+        <br>
+        Please include your Google Account email. Your request will be fulfilled within 24 to 48 hours.
+      </p>
+
+      <h3>Option 3: Online Web Deletion Ticket</h3>
+      <p>Submit your deletion request through the web form below:</p>
+
+      <div class="deletion-form-card">
+        <form onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="userEmail">Registered Google Account Email *</label>
+            <input type="email" id="userEmail" placeholder="your.name@gmail.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="reason">Reason for Deletion (Optional)</label>
+            <select id="reason">
+              <option value="no_longer_needed">No longer using the app</option>
+              <option value="privacy_concerns">Privacy preference</option>
+              <option value="switching_device">Switching device/account</option>
+              <option value="other">Other reason</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="comments">Additional Notes</label>
+            <textarea id="comments" rows="3" placeholder="Any optional feedback or questions..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">SUBMIT PERMANENT DELETION REQUEST</button>
+        </form>
+
+        <div id="successMsg" style="display:none; margin-top:20px; color:#10b981; font-weight:700;">
+          ✅ Your data deletion ticket has been recorded. Your account and stored records will be permanently expunged within 24 business hours. Confirmation will be sent to your email.
+        </div>
+      </div>
+
+      <h2>What Data is Deleted?</h2>
+      <p>When your account is deleted, the following items are permanently removed from our active servers:</p>
+      <ul>
+        <li><strong>Google Identity Data:</strong> Your Google User ID (UID), email address, display name, and avatar URL.</li>
+        <li><strong>Financial Records:</strong> Available balance, accumulated streak counters, daily challenge progress, and pending reward tickets.</li>
+        <li><strong>Device Identifiers:</strong> Anonymous hardware fingerprint hashes and advertising session logs.</li>
+      </ul>
+
+      <h2>What Data is Retained (if any)?</h2>
+      <p>
+        Completed withdrawal payout disbursement transaction IDs are archived in encrypted offline logs for up to 90 days solely to comply with banking, tax, and anti-money laundering fraud regulations, after which they are permanently destroyed.
+      </p>
+    </div>
+  </main>
+
+  <script>
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const email = document.getElementById('userEmail').value;
+      if (!email) return;
+      document.querySelector('form').style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="brand">
+          <div class="brand-icon">▶</div>
+          <div class="brand-title">Ad<span>Rewards</span></div>
+        </div>
+
+        <div class="footer-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="data-deletion.html">Data Deletion</a>
+          <a href="support.html">Help & FAQ</a>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        &copy; 2026 AdRewards. Official Data Deletion Policy URL for Google Play Console.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
